@@ -5,7 +5,7 @@ links:
   - label: LinkedIn
     url: "https://www.linkedin.com/in/haley-grant-4014b211b/"
   - label: GitHub
-    url: "https://github.com/haleymariegrant"
+    url: "https://github.com/hmgrant"
   - label: Email
     url: "mailto:haleygrant@ucsb.com"
 output:
