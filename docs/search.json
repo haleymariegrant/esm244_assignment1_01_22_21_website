@@ -2,25 +2,24 @@
   "articles": [
     {
       "path": "about.html",
-      "title": "About this site",
-      "description": "Some additional details about the website",
+      "title": "About me",
       "author": [],
-      "contents": "\n\n\n\n",
-      "last_modified": "2021-01-23T19:27:04-08:00"
+      "contents": "\nInterests\nIn my graduate study I focus on the role that economies and governments play in preventing and contributing to climate change. I am interested in market interventions and North American environments.\nI like to be outside hiking, running, and surfing.\nProjects\nMy master’s group project looks at how agricultural lending can reward environmental stewardship, specifically through loans that include favorable terms for growers who reduce water and fertilizer use.\nOur project is working with the Sustainable Groundwater Management Act (SGMA) to help California reduce aquifer overdraft.\n\n\n\n",
+      "last_modified": "2021-02-07T13:22:19-08:00"
     },
     {
       "path": "blog.html",
       "title": "Blog",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2021-01-23T19:27:05-08:00"
+      "last_modified": "2021-02-07T13:22:20-08:00"
     },
     {
       "path": "index.html",
       "title": "Haley Grant",
       "author": [],
-      "contents": "\n\n          \n          \n          mfeo\n          \n          \n          Home\n          About\n          Blog\n          ☰\n          \n          \n      \n        \n          \n            \n              \n            \n              Haley Grant\n            \n            \n              \n                \n                    \n                      \n                        LinkedIn\n                      \n                    \n                  \n                                    \n                    \n                      \n                        GitHub\n                      \n                    \n                  \n                                    \n                    \n                      \n                        Email\n                      \n                    \n                  \n                                  \n            \n          \n        \n        \n        \n          \n            I am a classically trained data scientist living in the San Francisco Bay Area. Currently I work on the Oculus team at Facebook. I love talking about baseball, true crime podcasts, and causal inference.\n          \n        \n      \n    \n\n    \n      \n        \n          \n            \n              \n            \n              Haley Grant\n            \n            \n              \n                \n                                    \n                    \n                      LinkedIn\n                    \n                  \n                                    \n                    \n                      GitHub\n                    \n                  \n                                    \n                    \n                      Email\n                    \n                  \n                                  \n              \n            \n            \n              I am a classically trained data scientist living in the San Francisco Bay Area. Currently I work on the Oculus team at Facebook. I love talking about baseball, true crime podcasts, and causal inference.\n            \n        \n      \n    \n\n    \n    \n    ",
-      "last_modified": "2021-01-23T19:27:05-08:00"
+      "contents": "\n\n          \n          \n          mfeo\n          \n          \n          Home\n          About\n          Blog\n          ☰\n          \n          \n      \n        \n          \n            \n              \n            \n              Haley Grant\n            \n            \n              \n                \n                    \n                      \n                        LinkedIn\n                      \n                    \n                  \n                                    \n                    \n                      \n                        GitHub\n                      \n                    \n                  \n                                    \n                    \n                      \n                        Email\n                      \n                    \n                  \n                                  \n            \n          \n        \n        \n        \n          \n            I am a master’s candidate at the Bren School studying environmental science. Currently I live on Chumash land.\n          \n        \n      \n    \n\n    \n      \n        \n          \n            \n              \n            \n              Haley Grant\n            \n            \n              \n                \n                                    \n                    \n                      LinkedIn\n                    \n                  \n                                    \n                    \n                      GitHub\n                    \n                  \n                                    \n                    \n                      Email\n                    \n                  \n                                  \n              \n            \n            \n              I am a master’s candidate at the Bren School studying environmental science. Currently I live on Chumash land.\n            \n        \n      \n    \n\n    \n    \n    ",
+      "last_modified": "2021-02-07T13:22:21-08:00"
     }
   ],
   "collections": ["posts/posts.json"]

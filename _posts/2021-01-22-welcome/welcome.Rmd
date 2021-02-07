@@ -1,7 +1,7 @@
 ---
 title: "welcome"
 description: |
-  A short description of the post.
+  My personal website.
 author:
   - name: Haley Grant
 date: 01-22-2021
@@ -14,6 +14,8 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
+
+I made this website for Advanced Data Science at UCSB's Bren School, using Distill's Postcards package. I hope you like it! 
 
 Distill is a publication format for scientific and technical writing, native to the web.
 

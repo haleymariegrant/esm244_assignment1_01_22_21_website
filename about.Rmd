@@ -1,10 +1,19 @@
 ---
-title: "About this site"
-description: |
-  Some additional details about the website
+title: "About me"
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+### Interests
+
+In my graduate study I focus on the role that economies and governments play in preventing and contributing to climate change. I am interested in market interventions and North American environments. 
+
+I like to be outside hiking, running, and surfing. 
+
+### Projects
+
+My master's group project looks at how agricultural lending can reward environmental stewardship, specifically through loans that include favorable terms for growers who reduce water and fertilizer use. 
+
+Our project is working with the Sustainable Groundwater Management Act (SGMA) to help California reduce aquifer overdraft.

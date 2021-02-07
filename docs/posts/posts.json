@@ -2,7 +2,7 @@
   {
     "path": "posts/2021-01-22-welcome/",
     "title": "welcome",
-    "description": "A short description of the post.",
+    "description": "My personal website.",
     "author": [
       {
         "name": "Haley Grant",
@@ -11,9 +11,9 @@
     ],
     "date": "2021-01-22",
     "categories": [],
-    "contents": "\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill at https://rstudio.github.io/distill.\n\n\n\n",
+    "contents": "\nI made this website for Advanced Data Science at UCSB’s Bren School, using Distill’s Postcards package. I hope you like it!\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill at https://rstudio.github.io/distill.\n\n\n\n",
     "preview": {},
-    "last_modified": "2021-01-22T21:12:34-08:00",
+    "last_modified": "2021-02-06T20:18:06-08:00",
     "input_file": {}
   }
 ]
