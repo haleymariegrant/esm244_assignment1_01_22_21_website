@@ -8,7 +8,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ### Interests
 
-In my graduate study I focus on the role that economies and governments play in preventing and contributing to climate change. I am interested in market interventions and North American environments. 
+In my graduate study I focus on the role that economies and governments play regarding climate change. I am interested in market interventions and North American environments. 
 
 I like to be outside hiking, running, and surfing. 
 
