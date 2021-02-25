@@ -21,4 +21,5 @@ Distill is a publication format for scientific and technical writing, native to 
 
 Learn more about using Distill at <https://rstudio.github.io/distill>.
 
+Color palette: https://www.canva.com/colors/color-palettes/berry-woodsy-day/
 

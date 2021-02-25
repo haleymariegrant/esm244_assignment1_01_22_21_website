@@ -1,0 +1,27 @@
+---
+title: "western monarch butterflies"
+description: |
+  My Shiny App Term Project.
+author:
+  - name: Haley Grant
+date: 01-22-2021
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Today, Western Monarch Butterfly counts are at an [historic low](https://xerces.org/western-monarch-call-to-action). We've seen a steep drop in population size in the past few years and counts fell sharply in 2020. Someday soon the butterfly could go extinct in the American west. 
+
+It's up to us whether or not they can recover. Monarchs, like many species, are most threatened by loss of habitat. Much of California has been developed and the native plants Monarchs need are not as common.
+
+Not only that, but non-native invasive species worsen the problem. These species typically have different blooming times which attract Monarchs and disrupt their traditional migration pattern. This is dangerous for Monarchs because it can prevent them from reaching critical overwintering sites. 
+
+California land-owners are privileged to be able to choose what grows on their property, but this privilege also comes with a responsibility to plant native species. If we want to save the Western Monarch Butterfly, those of us who own or have access to land need to plant the correct species to give Monarchs some of their habitat back.
+
+Our Shiny App aims to inform about this issue and also explain where native species should be grown. It will have reactive graphs that illustrate trends in population counts over time. We will also include a list common native milkweeds and visualize spatially where they grow. 
+
+Data and information for this project was provided by the Western Monarch Count, the Xerces Society for Invertebrate Conservation, and the Monarch and Milkweed Mapper Database.
