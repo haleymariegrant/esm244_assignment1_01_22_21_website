@@ -1,0 +1,87 @@
+---
+title: "wordcloud"
+description: |
+  A featured code project.
+author:
+  - name: Haley Grant
+    url: {}
+date: 03-14-2021
+output:
+  distill::distill_article:
+    code_folding: true
+    self_contained: false
+---
+This quarter I practiced creating wordclouds in R. The figure below is a wordcloud of the most common words in chapter one of Jane Austen's novel *Sense and Sensibility*. [^1][^2][^3]
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(tidyverse)
+library(tidytext)
+library(textdata)
+library(pdftools)
+library(ggwordcloud)
+library(ggpubr)
+library(jpeg)
+library(here)
+```
+
+```{r}
+sense_text <- pdf_text(here('sensesensibility00austiala.pdf'))
+
+sense_tidy <- data.frame(sense_text) %>% 
+  mutate(text_full = str_split(sense_text, pattern = '\\n')) %>% 
+  unnest(text_full) %>% 
+  mutate(text_full = str_trim(text_full)) 
+
+sense_df <- sense_tidy %>% 
+  slice(-(1:149)) %>% 
+  mutate(chapter = case_when(
+    str_detect(text_full, "CHAPTER") ~ text_full,
+    TRUE ~ NA_character_
+  )) %>% 
+  fill(chapter) %>% 
+  separate(col = chapter, into = c("ch", "no"), sep = "       ") %>% 
+  mutate(no = str_remove_all(no, "[.]")) %>% 
+  mutate(chapter = as.numeric(as.roman(no)))
+
+sense_tokens <- sense_df %>% 
+  unnest_tokens(word, text_full) %>% 
+  select(-sense_text)
+
+sense_wordcount <- sense_tokens %>% 
+  count(chapter, word)
+
+sense_nonstop_words <- sense_tokens %>% 
+  anti_join(stop_words)
+
+nonstop_counts <- sense_nonstop_words %>% 
+  count(chapter, word) %>% 
+  mutate(word = str_remove_all(word, c("[0-9]+"))) %>% 
+  drop_na()
+
+ch1_top100 <- nonstop_counts %>% 
+  filter(chapter == 1) %>% 
+  arrange(-n) %>% 
+  slice(1:100)
+
+url <- "https://upload.wikimedia.org/wikipedia/commons/d/d8/Burlington_Arcade%2C_Piccadilly_-_Shepherd%2C_Metropolitan_Improvements_%281828%29%2C_p283.jpg"
+
+download.file(url, destfile = "wordcloud.jpg")
+img <- readJPEG("wordcloud.jpg")
+
+ch1_cloud <- ggplot(data = ch1_top100, aes(label = word)) +
+  background_image(img) +
+  geom_text_wordcloud(aes(color = n, size = n), shape = "square", show_boxes = TRUE) +
+  scale_size_area(max_size = 6) +
+  scale_color_gradientn(colors = c("midnightblue","steelblue4","darkmagenta")) +
+  theme_minimal() +
+  labs(title = "Most common words from chapter one of Sense and Sensibility")
+
+ch1_cloud
+```
+
+[^1]: Austen, Jane. (1811). Sense and Sensibility. Thomas Egerton, Military Library (Whitehall, London).
+
+[^2]: Evidence reported by alyson-wieczorek for item sensesensibility00austiala on April 27, 2007: no visible notice of copyright; stated date is 1882. https://archive.org/details/sensesensibility00austiala/page/n5/mode/2up
+
+[^3]: Thomas Hosmer Shepherd, Public domain, via Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Burlington_Arcade,_Piccadilly_-_Shepherd,_Metropolitan_Improvements_(1828),_p283.jpg.

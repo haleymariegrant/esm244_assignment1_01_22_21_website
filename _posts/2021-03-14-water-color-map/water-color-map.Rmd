@@ -1,0 +1,48 @@
+---
+title: "water color map"
+description: |
+  A featured code project.
+author:
+  - name: Haley Grant
+    url: {}
+date: 03-14-2021
+output:
+  distill::distill_article:
+    code_folding: true
+    self_contained: false
+---
+I wrote the following code for ESM 244 when we learned how to work with spatial data. The interactive map below uses the R package `tmap` to show locations of oil spills for three types of locations.[^1] The background is a [watercolor map of the world](http://maps.stamen.com/watercolor/#12/37.7706/-122.3782) by the design studio [Stamen](https://stamen.com/).
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(tidyverse)
+library(here)
+library(janitor)
+library(sf)
+library(tmap)
+library(gstat)
+library(stars)
+library(plotly)
+library(rjson)
+```
+
+```{r}
+oilspill <- read_sf(here("ds394"), layer = "ds394") %>% 
+  clean_names()
+
+ca_counties <- read_sf(here("ca_counties"), layer = "CA_Counties_TIGER2016") %>% 
+  clean_names() %>% 
+  select(name) %>% 
+  arrange(name)
+
+ca_counties <- st_transform(ca_counties, st_crs(oilspill))
+
+tmap_mode("view")
+
+tm_basemap("Stamen.Watercolor") + 
+  tm_shape(oilspill) +
+  tm_dots(col = "specificlo",
+          palette = "Dark2")
+```
+
+[^1]: Citation: Oil Spill Incident Tracking [ds394]. Published (2009-07-23). California Department of Fish and Game, Office of Spill Prevention and Response (OSPR) Incident Tracking Database.https://map.dfg.ca.gov/metadata/ds0394.html#ID0EAAAAAFA.
