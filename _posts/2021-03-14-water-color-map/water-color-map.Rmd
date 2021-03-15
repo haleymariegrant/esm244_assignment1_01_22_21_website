@@ -1,5 +1,5 @@
 ---
-title: "water color map"
+title: "watercolor map"
 description: |
   A featured code project.
 author:

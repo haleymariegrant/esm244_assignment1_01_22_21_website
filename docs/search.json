@@ -5,21 +5,21 @@
       "title": "About me",
       "author": [],
       "contents": "\nInterests\nIn my graduate study I focus on the role that economies and governments play regarding climate change. I am interested in market interventions and North American environments.\nI like to be outside hiking, running, and surfing.\nProjects\nMy master’s group project looks at the possible benefits of a “pay-for-performance” loan product for farms who reduce water and fertilizer use.\nOur work is helping limit aquifer overdraft and reduce nitrate contamination in California’s groundwater.\n\n\n\n",
-      "last_modified": "2021-03-14T20:39:50-07:00"
+      "last_modified": "2021-03-15T15:18:29-07:00"
     },
     {
       "path": "blog.html",
       "title": "Blog",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2021-03-14T20:39:52-07:00"
+      "last_modified": "2021-03-15T15:18:30-07:00"
     },
     {
       "path": "index.html",
       "title": "Haley Grant",
       "author": [],
       "contents": "\n\n          \n          \n          Haley Grant\n          \n          \n          Home\n          About\n          Blog\n          CV\n          ☰\n          \n          \n      \n        \n          \n            \n              \n            \n              Haley Grant\n            \n            \n              \n                \n                    \n                      \n                        LinkedIn\n                      \n                    \n                  \n                                    \n                    \n                      \n                        GitHub\n                      \n                    \n                  \n                                    \n                    \n                      \n                        Email\n                      \n                    \n                  \n                                  \n            \n          \n        \n        \n        \n          \n            I am a master’s candidate at the Bren School studying environmental science. Currently I live on Chumash land.\n          \n        \n      \n    \n\n    \n      \n        \n          \n            \n              \n            \n              Haley Grant\n            \n            \n              \n                \n                                    \n                    \n                      LinkedIn\n                    \n                  \n                                    \n                    \n                      GitHub\n                    \n                  \n                                    \n                    \n                      Email\n                    \n                  \n                                  \n              \n            \n            \n              I am a master’s candidate at the Bren School studying environmental science. Currently I live on Chumash land.\n            \n        \n      \n    \n\n    \n    \n    ",
-      "last_modified": "2021-03-14T20:39:52-07:00"
+      "last_modified": "2021-03-15T15:18:30-07:00"
     },
     {
       "path": "monarch_butterflies.html",
@@ -33,7 +33,7 @@
       ],
       "date": "01-22-2021",
       "contents": "\nToday, Western Monarch Butterfly counts are at an historic low. We’ve seen a steep drop in population size in the past few years and counts fell sharply in 2020. Someday soon the butterfly could go extinct in the American west.\nIt’s up to us whether or not they can recover. Monarchs, like many species, are most threatened by loss of habitat. Much of California has been developed and the native plants Monarchs need are not as common.\nNot only that, but non-native invasive species worsen the problem. These species typically have different blooming times which attract Monarchs and disrupt their traditional migration pattern. This is dangerous for Monarchs because it can prevent them from reaching critical overwintering sites.\nCalifornia land-owners are privileged to be able to choose what grows on their property, but this privilege also comes with a responsibility to plant native species. If we want to save the Western Monarch Butterfly, those of us who own or have access to land need to plant the correct species to give Monarchs some of their habitat back.\nOur Shiny App aims to inform about this issue and also explain where native species should be grown. It will have reactive graphs that illustrate trends in population counts over time. We will also include a list common native milkweeds and visualize spatially where they grow.\nData and information for this project was provided by the Western Monarch Count, the Xerces Society for Invertebrate Conservation, and the Monarch and Milkweed Mapper Database.\n\n\n\n",
-      "last_modified": "2021-03-14T20:39:54-07:00"
+      "last_modified": "2021-03-15T15:18:32-07:00"
     }
   ],
   "collections": ["posts/posts.json"]
